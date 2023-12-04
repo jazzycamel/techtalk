@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Neon";
+    src: url("../assets/neon.ttf");
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: SansSerif, sans-serif;
+    height: 100%;
+}
+
+body {
+    background: black;
+    background-image: url("../assets/bg.jpg");
+}
+
+div#app {
+    height: 100%;
+}
+
+div.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.neon {
+    font-family: "Neon";
+    animation: flicker 1.5s infinite alternate;
+    color: white;
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+                0 0 4px #fff,
+                0 0 11px #fff,
+                0 0 19px #fff,
+                0 0 40px #ff8560,
+                0 0 80px #ff8560,
+                0 0 90px #ff8560,
+                0 0 100px #ff8560,
+                0 0 150px #ff8560;
+
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+h1.neon {
+    font-size: 4em;
+}
+
+h1.masthead {
+    position: absolute;
+    display: block;
+    height: 1em;
+    width: 6em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    inset: 50% 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 3em;
+    border-radius: 1em;
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.footer, .push {
+    height: 50px;
+    text-align: center;
+    color: #aaa;
+}

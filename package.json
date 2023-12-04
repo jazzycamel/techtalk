@@ -1,0 +1,18 @@
+{
+  "name": "techtalk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "python3 -m http.server 9000",
+    "format": "biome format ./js --write",
+    "lint": "biome check ./js --apply-unsafe",
+    "check": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "typescript": "^5.3.2"
+  }
+}
